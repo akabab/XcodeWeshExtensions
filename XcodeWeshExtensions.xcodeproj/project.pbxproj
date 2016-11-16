@@ -1,0 +1,467 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9148981F1DDC9CF6002E4E01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9148981E1DDC9CF6002E4E01 /* AppDelegate.swift */; };
+		914898211DDC9CF6002E4E01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 914898201DDC9CF6002E4E01 /* Assets.xcassets */; };
+		914898241DDC9CF6002E4E01 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 914898221DDC9CF6002E4E01 /* MainMenu.xib */; };
+		914898321DDC9D22002E4E01 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 914898311DDC9D22002E4E01 /* Cocoa.framework */; };
+		914898371DDC9D22002E4E01 /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914898361DDC9D22002E4E01 /* SourceEditorExtension.swift */; };
+		914898391DDC9D22002E4E01 /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914898381DDC9D22002E4E01 /* SourceEditorCommand.swift */; };
+		9148983D1DDC9D22002E4E01 /* XcodeWeshCCP.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9148982F1DDC9D22002E4E01 /* XcodeWeshCCP.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		914898441DDC9DA7002E4E01 /* CCP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914898421DDC9DA7002E4E01 /* CCP.swift */; };
+		914898451DDC9DA7002E4E01 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914898431DDC9DA7002E4E01 /* Helpers.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9148983B1DDC9D22002E4E01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 914898131DDC9CF6002E4E01 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9148982E1DDC9D22002E4E01;
+			remoteInfo = XcodeWeshCCP;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		914898411DDC9D22002E4E01 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9148983D1DDC9D22002E4E01 /* XcodeWeshCCP.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9148981B1DDC9CF6002E4E01 /* XcodeWeshExtensions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XcodeWeshExtensions.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9148981E1DDC9CF6002E4E01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		914898201DDC9CF6002E4E01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		914898231DDC9CF6002E4E01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		914898251DDC9CF6002E4E01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9148982F1DDC9D22002E4E01 /* XcodeWeshCCP.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = XcodeWeshCCP.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		914898311DDC9D22002E4E01 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		914898351DDC9D22002E4E01 /* XcodeWeshCCP.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XcodeWeshCCP.entitlements; sourceTree = "<group>"; };
+		914898361DDC9D22002E4E01 /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
+		914898381DDC9D22002E4E01 /* SourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
+		9148983A1DDC9D22002E4E01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		914898421DDC9DA7002E4E01 /* CCP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCP.swift; sourceTree = "<group>"; };
+		914898431DDC9DA7002E4E01 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		914898181DDC9CF6002E4E01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9148982C1DDC9D22002E4E01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				914898321DDC9D22002E4E01 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		914898121DDC9CF6002E4E01 = {
+			isa = PBXGroup;
+			children = (
+				9148981D1DDC9CF6002E4E01 /* XcodeWeshExtensions */,
+				914898331DDC9D22002E4E01 /* XcodeWeshCCP */,
+				914898301DDC9D22002E4E01 /* Frameworks */,
+				9148981C1DDC9CF6002E4E01 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9148981C1DDC9CF6002E4E01 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9148981B1DDC9CF6002E4E01 /* XcodeWeshExtensions.app */,
+				9148982F1DDC9D22002E4E01 /* XcodeWeshCCP.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9148981D1DDC9CF6002E4E01 /* XcodeWeshExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				9148981E1DDC9CF6002E4E01 /* AppDelegate.swift */,
+				914898201DDC9CF6002E4E01 /* Assets.xcassets */,
+				914898221DDC9CF6002E4E01 /* MainMenu.xib */,
+				914898251DDC9CF6002E4E01 /* Info.plist */,
+			);
+			path = XcodeWeshExtensions;
+			sourceTree = "<group>";
+		};
+		914898301DDC9D22002E4E01 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				914898311DDC9D22002E4E01 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		914898331DDC9D22002E4E01 /* XcodeWeshCCP */ = {
+			isa = PBXGroup;
+			children = (
+				914898361DDC9D22002E4E01 /* SourceEditorExtension.swift */,
+				914898381DDC9D22002E4E01 /* SourceEditorCommand.swift */,
+				914898421DDC9DA7002E4E01 /* CCP.swift */,
+				914898431DDC9DA7002E4E01 /* Helpers.swift */,
+				9148983A1DDC9D22002E4E01 /* Info.plist */,
+				914898341DDC9D22002E4E01 /* Supporting Files */,
+			);
+			path = XcodeWeshCCP;
+			sourceTree = "<group>";
+		};
+		914898341DDC9D22002E4E01 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				914898351DDC9D22002E4E01 /* XcodeWeshCCP.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9148981A1DDC9CF6002E4E01 /* XcodeWeshExtensions */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 914898281DDC9CF6002E4E01 /* Build configuration list for PBXNativeTarget "XcodeWeshExtensions" */;
+			buildPhases = (
+				914898171DDC9CF6002E4E01 /* Sources */,
+				914898181DDC9CF6002E4E01 /* Frameworks */,
+				914898191DDC9CF6002E4E01 /* Resources */,
+				914898411DDC9D22002E4E01 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9148983C1DDC9D22002E4E01 /* PBXTargetDependency */,
+			);
+			name = XcodeWeshExtensions;
+			productName = XcodeWeshExtensions;
+			productReference = 9148981B1DDC9CF6002E4E01 /* XcodeWeshExtensions.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9148982E1DDC9D22002E4E01 /* XcodeWeshCCP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9148983E1DDC9D22002E4E01 /* Build configuration list for PBXNativeTarget "XcodeWeshCCP" */;
+			buildPhases = (
+				9148982B1DDC9D22002E4E01 /* Sources */,
+				9148982C1DDC9D22002E4E01 /* Frameworks */,
+				9148982D1DDC9D22002E4E01 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XcodeWeshCCP;
+			productName = XcodeWeshCCP;
+			productReference = 9148982F1DDC9D22002E4E01 /* XcodeWeshCCP.appex */;
+			productType = "com.apple.product-type.xcode-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		914898131DDC9CF6002E4E01 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = akabab;
+				TargetAttributes = {
+					9148981A1DDC9CF6002E4E01 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 7AXYFS5U44;
+						ProvisioningStyle = Automatic;
+					};
+					9148982E1DDC9D22002E4E01 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 7AXYFS5U44;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 914898161DDC9CF6002E4E01 /* Build configuration list for PBXProject "XcodeWeshExtensions" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 914898121DDC9CF6002E4E01;
+			productRefGroup = 9148981C1DDC9CF6002E4E01 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9148981A1DDC9CF6002E4E01 /* XcodeWeshExtensions */,
+				9148982E1DDC9D22002E4E01 /* XcodeWeshCCP */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		914898191DDC9CF6002E4E01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				914898211DDC9CF6002E4E01 /* Assets.xcassets in Resources */,
+				914898241DDC9CF6002E4E01 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9148982D1DDC9D22002E4E01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		914898171DDC9CF6002E4E01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9148981F1DDC9CF6002E4E01 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9148982B1DDC9D22002E4E01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				914898441DDC9DA7002E4E01 /* CCP.swift in Sources */,
+				914898371DDC9D22002E4E01 /* SourceEditorExtension.swift in Sources */,
+				914898391DDC9D22002E4E01 /* SourceEditorCommand.swift in Sources */,
+				914898451DDC9DA7002E4E01 /* Helpers.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9148983C1DDC9D22002E4E01 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9148982E1DDC9D22002E4E01 /* XcodeWeshCCP */;
+			targetProxy = 9148983B1DDC9D22002E4E01 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		914898221DDC9CF6002E4E01 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				914898231DDC9CF6002E4E01 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		914898261DDC9CF6002E4E01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		914898271DDC9CF6002E4E01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		914898291DDC9CF6002E4E01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7AXYFS5U44;
+				INFOPLIST_FILE = XcodeWeshExtensions/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.weshcode.akabab.XcodeWeshExtensions;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		9148982A1DDC9CF6002E4E01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7AXYFS5U44;
+				INFOPLIST_FILE = XcodeWeshExtensions/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.weshcode.akabab.XcodeWeshExtensions;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		9148983F1DDC9D22002E4E01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = XcodeWeshCCP/XcodeWeshCCP.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7AXYFS5U44;
+				INFOPLIST_FILE = XcodeWeshCCP/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.weshcode.akabab.XcodeWeshExtensions.XcodeWeshCCP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		914898401DDC9D22002E4E01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = XcodeWeshCCP/XcodeWeshCCP.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7AXYFS5U44;
+				INFOPLIST_FILE = XcodeWeshCCP/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.weshcode.akabab.XcodeWeshExtensions.XcodeWeshCCP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		914898161DDC9CF6002E4E01 /* Build configuration list for PBXProject "XcodeWeshExtensions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				914898261DDC9CF6002E4E01 /* Debug */,
+				914898271DDC9CF6002E4E01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		914898281DDC9CF6002E4E01 /* Build configuration list for PBXNativeTarget "XcodeWeshExtensions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				914898291DDC9CF6002E4E01 /* Debug */,
+				9148982A1DDC9CF6002E4E01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9148983E1DDC9D22002E4E01 /* Build configuration list for PBXNativeTarget "XcodeWeshCCP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9148983F1DDC9D22002E4E01 /* Debug */,
+				914898401DDC9D22002E4E01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 914898131DDC9CF6002E4E01 /* Project object */;
+}
