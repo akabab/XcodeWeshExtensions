@@ -24,7 +24,7 @@ class OriginalCCPHandler: CCPHandler {
 
     self.copy(from: buffer)
 
-
+    // remove selection from buffer
     let start = selection.start, end = selection.end
 
     let startLine = buffer.lines[start.line] as! String
@@ -33,10 +33,6 @@ class OriginalCCPHandler: CCPHandler {
     let endLine = buffer.lines[end.line] as! String
     let endPart = endLine.substring(from: end.column)!.removeOccurrences(of: "\n")
 
-    print("startPart: '\(startPart)'")
-    print("endPart: '\(endPart)'")
-
-    // remove selection from buffer
     let range = Range(uncheckedBounds: (lower: start.line, upper: min(end.line + 1, buffer.lines.count)))
 
     buffer.lines.replaceObjects(in: NSRange(range), withObjectsFrom: [ startPart + endPart ])
@@ -44,7 +40,6 @@ class OriginalCCPHandler: CCPHandler {
 
     // set cursor position at the end
     let cursorPosition = XCSourceTextPosition(line: start.line, column: start.column)
-    print("cursorPosition:", cursorPosition)
 
     let updatedSelection = [ XCSourceTextRange(start: cursorPosition, end: cursorPosition) ]
     buffer.selections.setArray(updatedSelection)
@@ -56,7 +51,7 @@ class OriginalCCPHandler: CCPHandler {
 
     guard let pasteboardContent = pasteboard.string(forType: NSPasteboardTypeString) else { return }
 
-
+    // remove selection from buffer
     let start = selection.start, end = selection.end
 
     let startLine = buffer.lines[start.line] as! String
@@ -65,12 +60,8 @@ class OriginalCCPHandler: CCPHandler {
     let endLine = buffer.lines[end.line] as! String
     let endPart = endLine.substring(from: end.column)!.removeOccurrences(of: "\n")
 
-    print("startPart: '\(startPart)'")
-    print("endPart: '\(endPart)'")
-
     let contentJoined = startPart + pasteboardContent + endPart
     let contentLines = contentJoined.components(separatedBy: "\n")
-    print("contentLines:", contentLines)
 
     let range = Range(uncheckedBounds: (lower: start.line, upper: min(end.line + 1, buffer.lines.count)))
 
@@ -80,8 +71,7 @@ class OriginalCCPHandler: CCPHandler {
     let cursorLine = start.line + contentLines.count - 1
     let cursorColumn = contentLines[contentLines.count - 1].length - endPart.length
     let cursorPosition = XCSourceTextPosition(line: cursorLine, column: cursorColumn)
-    print("cursorPosition:", cursorPosition)
-
+    
     let updatedSelection = [ XCSourceTextRange(start: cursorPosition, end: cursorPosition) ]
     buffer.selections.setArray(updatedSelection)
   }

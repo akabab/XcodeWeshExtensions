@@ -20,12 +20,9 @@ class SourceEditorCommand: NSObject, XCSourceEditorCommand {
 
     let buffer = invocation.buffer
 
-    print("UTI:", buffer.contentUTI)
-
     let selection = buffer.selections.firstObject as? XCSourceTextRange
 
     let hasSelection = selection != nil && selection!.start != selection!.end
-    print("hasSelection:", hasSelection)
 
     switch invocation.commandIdentifier {
 
