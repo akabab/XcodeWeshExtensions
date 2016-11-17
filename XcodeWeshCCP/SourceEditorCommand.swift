@@ -8,6 +8,12 @@
 
 import XcodeKit
 
+// Global because SourceEditorCommand is beeing deinit each time
+var originalHandler = OriginalCCPHandler()
+var weshHandler = WeshCCPHandler()
+
+var lastUsedHandler: CCPHandler?
+
 class SourceEditorCommand: NSObject, XCSourceEditorCommand {
 
   func perform(with invocation: XCSourceEditorCommandInvocation, completionHandler: @escaping (Error?) -> Void ) -> Void {
@@ -18,12 +24,21 @@ class SourceEditorCommand: NSObject, XCSourceEditorCommand {
 
     let hasSelection = selection != nil && selection!.start != selection!.end
     print("hasSelection:", hasSelection)
-    let handler: CCPHandler = hasSelection ? OriginalCCPHandler() : WeshCCPHandler()
 
     switch invocation.commandIdentifier {
-    case "wesh_copy": handler.copy(from: buffer)
-    case "wesh_cut": handler.cut(from: buffer)
-    case "wesh_paste": handler.paste(from: buffer)
+
+    case "wesh_copy":
+      lastUsedHandler = (hasSelection ? originalHandler : weshHandler)
+      lastUsedHandler?.copy(from: buffer)
+
+    case "wesh_cut":
+      lastUsedHandler = (hasSelection ? originalHandler : weshHandler)
+      lastUsedHandler?.cut(from: buffer)
+
+    case "wesh_paste":
+      lastUsedHandler = lastUsedHandler ?? originalHandler
+      lastUsedHandler?.paste(from: buffer)
+
     default: break
     }
 
