@@ -7,7 +7,6 @@
 //
 
 import XcodeKit
-import AppKit
 
 class WeshCCPHandler: CCPHandler {
 

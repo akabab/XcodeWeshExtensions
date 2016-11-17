@@ -7,7 +7,6 @@
 //
 
 import XcodeKit
-import AppKit
 
 class OriginalCCPHandler: CCPHandler {
 
@@ -49,8 +48,6 @@ class OriginalCCPHandler: CCPHandler {
   func paste(from buffer: XCSourceTextBuffer) {
     guard let selection = buffer.selections.firstObject as? XCSourceTextRange else { return }
 
-    guard let pasteboardContent = pasteboard.string(forType: NSPasteboardTypeString) else { return }
-
     // remove selection from buffer
     let start = selection.start, end = selection.end
 
@@ -60,7 +57,7 @@ class OriginalCCPHandler: CCPHandler {
     let endLine = buffer.lines[end.line] as! String
     let endPart = endLine.substring(from: end.column)!.removeOccurrences(of: "\n")
 
-    let contentJoined = startPart + pasteboardContent + endPart
+    let contentJoined = startPart + pasteboard.contentString + endPart
     let contentLines = contentJoined.components(separatedBy: "\n")
 
     let range = Range(uncheckedBounds: (lower: start.line, upper: min(end.line + 1, buffer.lines.count)))
