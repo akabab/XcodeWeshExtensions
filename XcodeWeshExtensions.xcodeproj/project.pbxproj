@@ -377,7 +377,7 @@
 				DEVELOPMENT_TEAM = 7AXYFS5U44;
 				INFOPLIST_FILE = XcodeWeshExtensions/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.weshcode.akabab.XcodeWeshExtensions;
+				PRODUCT_BUNDLE_IDENTIFIER = com.weshcode.XcodeWeshExtensions;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -393,7 +393,7 @@
 				DEVELOPMENT_TEAM = 7AXYFS5U44;
 				INFOPLIST_FILE = XcodeWeshExtensions/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.weshcode.akabab.XcodeWeshExtensions;
+				PRODUCT_BUNDLE_IDENTIFIER = com.weshcode.XcodeWeshExtensions;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -409,7 +409,7 @@
 				INFOPLIST_FILE = XcodeWeshCCP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = com.weshcode.akabab.XcodeWeshExtensions.XcodeWeshCCP;
+				PRODUCT_BUNDLE_IDENTIFIER = com.weshcode.XcodeWeshExtensions.XcodeWeshCCP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -426,7 +426,7 @@
 				INFOPLIST_FILE = XcodeWeshCCP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = com.weshcode.akabab.XcodeWeshExtensions.XcodeWeshCCP;
+				PRODUCT_BUNDLE_IDENTIFIER = com.weshcode.XcodeWeshExtensions.XcodeWeshCCP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -452,6 +452,7 @@
 				9148982A1DDC9CF6002E4E01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9148983E1DDC9D22002E4E01 /* Build configuration list for PBXNativeTarget "XcodeWeshCCP" */ = {
 			isa = XCConfigurationList;
@@ -460,6 +461,7 @@
 				914898401DDC9D22002E4E01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
