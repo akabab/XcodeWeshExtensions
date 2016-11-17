@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		91084F5C1DDE4B3D00CA2B3B /* XCSource+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91084F5B1DDE4B3D00CA2B3B /* XCSource+Extensions.swift */; };
+		91084F5E1DDE4BB500CA2B3B /* WeshCCPHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91084F5D1DDE4BB500CA2B3B /* WeshCCPHandler.swift */; };
+		91084F601DDE4BE600CA2B3B /* OriginalCCPHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91084F5F1DDE4BE600CA2B3B /* OriginalCCPHandler.swift */; };
 		9148981F1DDC9CF6002E4E01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9148981E1DDC9CF6002E4E01 /* AppDelegate.swift */; };
 		914898211DDC9CF6002E4E01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 914898201DDC9CF6002E4E01 /* Assets.xcassets */; };
 		914898241DDC9CF6002E4E01 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 914898221DDC9CF6002E4E01 /* MainMenu.xib */; };
@@ -14,7 +17,7 @@
 		914898371DDC9D22002E4E01 /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914898361DDC9D22002E4E01 /* SourceEditorExtension.swift */; };
 		914898391DDC9D22002E4E01 /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914898381DDC9D22002E4E01 /* SourceEditorCommand.swift */; };
 		9148983D1DDC9D22002E4E01 /* XcodeWeshCCP.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9148982F1DDC9D22002E4E01 /* XcodeWeshCCP.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		914898441DDC9DA7002E4E01 /* CCP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914898421DDC9DA7002E4E01 /* CCP.swift */; };
+		914898441DDC9DA7002E4E01 /* CCPHandler+Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914898421DDC9DA7002E4E01 /* CCPHandler+Protocols.swift */; };
 		914898451DDC9DA7002E4E01 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914898431DDC9DA7002E4E01 /* Helpers.swift */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +46,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		91084F5B1DDE4B3D00CA2B3B /* XCSource+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCSource+Extensions.swift"; sourceTree = "<group>"; };
+		91084F5D1DDE4BB500CA2B3B /* WeshCCPHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeshCCPHandler.swift; sourceTree = "<group>"; };
+		91084F5F1DDE4BE600CA2B3B /* OriginalCCPHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OriginalCCPHandler.swift; sourceTree = "<group>"; };
 		9148981B1DDC9CF6002E4E01 /* XcodeWeshExtensions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XcodeWeshExtensions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9148981E1DDC9CF6002E4E01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		914898201DDC9CF6002E4E01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -54,7 +60,7 @@
 		914898361DDC9D22002E4E01 /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
 		914898381DDC9D22002E4E01 /* SourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
 		9148983A1DDC9D22002E4E01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		914898421DDC9DA7002E4E01 /* CCP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCP.swift; sourceTree = "<group>"; };
+		914898421DDC9DA7002E4E01 /* CCPHandler+Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CCPHandler+Protocols.swift"; sourceTree = "<group>"; };
 		914898431DDC9DA7002E4E01 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,6 +83,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		91084F611DDE4C0300CA2B3B /* CCP */ = {
+			isa = PBXGroup;
+			children = (
+				914898421DDC9DA7002E4E01 /* CCPHandler+Protocols.swift */,
+				91084F5F1DDE4BE600CA2B3B /* OriginalCCPHandler.swift */,
+				91084F5D1DDE4BB500CA2B3B /* WeshCCPHandler.swift */,
+			);
+			name = CCP;
+			sourceTree = "<group>";
+		};
+		91084F621DDE4C2300CA2B3B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				91084F5B1DDE4B3D00CA2B3B /* XCSource+Extensions.swift */,
+				914898431DDC9DA7002E4E01 /* Helpers.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
 		914898121DDC9CF6002E4E01 = {
 			isa = PBXGroup;
 			children = (
@@ -120,9 +145,8 @@
 			children = (
 				914898361DDC9D22002E4E01 /* SourceEditorExtension.swift */,
 				914898381DDC9D22002E4E01 /* SourceEditorCommand.swift */,
-				914898421DDC9DA7002E4E01 /* CCP.swift */,
-				914898431DDC9DA7002E4E01 /* Helpers.swift */,
-				9148983A1DDC9D22002E4E01 /* Info.plist */,
+				91084F611DDE4C0300CA2B3B /* CCP */,
+				91084F621DDE4C2300CA2B3B /* Helpers */,
 				914898341DDC9D22002E4E01 /* Supporting Files */,
 			);
 			path = XcodeWeshCCP;
@@ -131,6 +155,7 @@
 		914898341DDC9D22002E4E01 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9148983A1DDC9D22002E4E01 /* Info.plist */,
 				914898351DDC9D22002E4E01 /* XcodeWeshCCP.entitlements */,
 			);
 			name = "Supporting Files";
@@ -248,7 +273,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				914898441DDC9DA7002E4E01 /* CCP.swift in Sources */,
+				91084F5E1DDE4BB500CA2B3B /* WeshCCPHandler.swift in Sources */,
+				91084F5C1DDE4B3D00CA2B3B /* XCSource+Extensions.swift in Sources */,
+				91084F601DDE4BE600CA2B3B /* OriginalCCPHandler.swift in Sources */,
+				914898441DDC9DA7002E4E01 /* CCPHandler+Protocols.swift in Sources */,
 				914898371DDC9D22002E4E01 /* SourceEditorExtension.swift in Sources */,
 				914898391DDC9D22002E4E01 /* SourceEditorCommand.swift in Sources */,
 				914898451DDC9DA7002E4E01 /* Helpers.swift in Sources */,
