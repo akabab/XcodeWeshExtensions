@@ -62,6 +62,7 @@
 		9148983A1DDC9D22002E4E01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		914898421DDC9DA7002E4E01 /* CCPHandler+Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CCPHandler+Protocols.swift"; sourceTree = "<group>"; };
 		914898431DDC9DA7002E4E01 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		91C7038C1DE74BFF00769A1A /* XcodeWeshExtensions.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XcodeWeshExtensions.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +125,7 @@
 		9148981D1DDC9CF6002E4E01 /* XcodeWeshExtensions */ = {
 			isa = PBXGroup;
 			children = (
+				91C7038C1DE74BFF00769A1A /* XcodeWeshExtensions.entitlements */,
 				9148981E1DDC9CF6002E4E01 /* AppDelegate.swift */,
 				914898201DDC9CF6002E4E01 /* Assets.xcassets */,
 				914898221DDC9CF6002E4E01 /* MainMenu.xib */,
@@ -214,6 +216,11 @@
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 7AXYFS5U44;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 					9148982E1DDC9D22002E4E01 = {
 						CreatedOnToolsVersion = 8.1;
@@ -400,6 +407,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = XcodeWeshExtensions/XcodeWeshExtensions.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 7AXYFS5U44;
@@ -416,6 +424,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = XcodeWeshExtensions/XcodeWeshExtensions.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 7AXYFS5U44;
